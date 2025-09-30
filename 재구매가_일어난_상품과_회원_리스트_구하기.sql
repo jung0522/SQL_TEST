@@ -1,4 +1,4 @@
--- 코드를 입력하세요
+
 SELECT 
   o.USER_ID,
   o.PRODUCT_ID
