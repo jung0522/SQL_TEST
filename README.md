@@ -31,4 +31,4 @@ JOIN (
     
 ) j  -- <- 서브쿼리 별칭 필요
 
-
+GROUP BY 쓰면 HAVING !! WHERE이 아니라
