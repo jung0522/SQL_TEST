@@ -15,4 +15,10 @@ MONTH(m.DATE_OF_BIRTH) = 3
 
 JOIN 쓰면 GROUP BY!!
 
+JOIN (
+    SELECT FLAVOR, SUM(TOTAL_ORDER) AS JULY_TOTAL
+    FROM JULY
+    GROUP BY FLAVOR
+) j  -- <- 서브쿼리 별칭 필요
+
 
