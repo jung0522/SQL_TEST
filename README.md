@@ -17,6 +17,8 @@ JOIN 쓰면 GROUP BY!!
 
 JOIN (
 
+ -- 괄호 열고
+ 
     SELECT FLAVOR, SUM(TOTAL_ORDER) AS JULY_TOTAL
     
     FROM JULY
