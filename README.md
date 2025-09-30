@@ -1,3 +1,5 @@
+1. 자주 나오는 함수
+
 DATE_FORMAT(m.DATE_OF_BIRTH, '%Y-%m-%d') AS DATE_OF_BIRTH
 
 IFNULL
@@ -7,11 +9,13 @@ ROUND( , 자릿수)
 MONTH(m.DATE_OF_BIRTH) = 3   
 
 
-집계함수
+2. 집계함수
 
 가능: SELECT, HAVING, ORDER BY
 
 불가능: WHERE, ON (집계 함수 기준으로는)
+
+3. 고급 문제
 
 JOIN 쓰면 GROUP BY!!
 
