@@ -1,4 +1,4 @@
-
+--
 SELECT 
   o.USER_ID,
   o.PRODUCT_ID
