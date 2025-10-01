@@ -17,7 +17,7 @@ MONTH(m.DATE_OF_BIRTH) = 3
 
 3. 고급 문제
 
-JOIN 쓰면 GROUP BY!!
+집꼐함수 쓰면 GROUP BY!!
 
 JOIN (
 
