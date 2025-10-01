@@ -1,4 +1,4 @@
--- 코드를 작성해주세요
+-- 부모 자식 관계면 join 2번
 SELECT 
 c.ITEM_ID, 
 c.ITEM_NAME,
