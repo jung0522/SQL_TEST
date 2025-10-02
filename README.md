@@ -15,7 +15,10 @@ MONTH(m.DATE_OF_BIRTH) = 3
 
 불가능: WHERE, ON (집계 함수 기준으로는)
 
+
 3. 고급 문제
+
+GROUP BY를 쓰고 싶다면, 일반적으로 집계 함수(COUNT, SUM, MAX 등)와 함께 사용
 
 SELECT 절에 집계함수 혼합해서 쓰면 GROUP BY 반드시!!
 
