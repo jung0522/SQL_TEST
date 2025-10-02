@@ -1,0 +1,7 @@
+-- 부모 자식이면 p c로 자체 조인
+SELECT p.ID, COUNT(c.id) AS CHILD_COUNT
+FROM ECOLI_DATA p
+LEFT JOIN ECOLI_DATA c
+ON p.id = c.PARENT_ID
+GROUP BY p.ID
+ORDER BY p.ID
