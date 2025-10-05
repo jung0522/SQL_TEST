@@ -1,4 +1,4 @@
--- 코드를 작성해주세요
+
 SELECT 
 ID,
 -- NTILE(수) OVER (ORDER BY(조건) DESC)
