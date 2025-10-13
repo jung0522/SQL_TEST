@@ -1,0 +1,31 @@
+-- 코드를 작성해주세요
+WITH RECURSIVE generation AS (
+    SELECT ID, 
+    PARENT_ID,
+    -- 1 AS 테이블
+    1 AS GENERATION
+    FROM ECOLI_DATA
+    -- 처음에는 부모 널
+    WHERE PARENT_ID IS NULL
+    
+    UNION ALL 
+    
+    SELECT 
+    c.ID, 
+    c.PARENT_ID,
+    p.GENERATION + 1
+    FROM ECOLI_DATA c
+    JOIN generation p
+    ON c.PARENT_ID = p.ID 
+)
+SELECT 
+    COUNT(*) AS COUNT,
+    GENERATION
+FROM generation
+WHERE ID NOT IN (
+    SELECT DISTINCT PARENT_ID
+    FROM ECOLI_DATA
+    WHERE PARENT_ID IS NOT NULL
+)
+GROUP BY GENERATION
+ORDER BY GENERATION;
