@@ -2,7 +2,7 @@
 SELECT DISTINCT d.ID, d.EMAIL, d.FIRST_NAME, d.LAST_NAME
 FROM DEVELOPERS d
 JOIN SKILLCODES s
--- 이진수 & 연산
+-- 이진수 & 연산 != 0
 ON (d.SKILL_CODE & s.CODE) != 0
 WHERE s.NAME IN ('Python' , 'C#')
 ORDER BY d.ID
