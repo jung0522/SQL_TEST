@@ -38,3 +38,7 @@ JOIN (
 ) j  -- <- 서브쿼리 별칭 필요
 
 GROUP BY 쓰면 HAVING !! WHERE이 아니라
+
+
+4. GROUP BY에는 집계 함수에 쓰인 컬럼 불가능
+5. ORDER BY에서 집계 함수 사용 시 반드시 GROUP BY 써야 함
