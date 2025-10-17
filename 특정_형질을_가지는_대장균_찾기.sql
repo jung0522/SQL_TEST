@@ -1,4 +1,4 @@
--- 코드를 작성해주세요
+-- 이진수 형질 1 2 4 8
 SELECT COUNT(*) AS COUNT
 FROM ECOLI_DATA 
 WHERE (GENOTYPE & 2) = 0
